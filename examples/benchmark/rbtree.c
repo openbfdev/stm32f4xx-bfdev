@@ -64,7 +64,7 @@ int rbtree_benchmark(void)
     }
 
     time = HAL_GetTick() - start;
-    bfdev_log_notice("Total time: %lu.%lus\n", time / 1000, time % 1000);
+    bfdev_log_notice("Total time: %lu.%04lus\n", time / 1000, time % 1000);
     free(block);
 
     return 0;

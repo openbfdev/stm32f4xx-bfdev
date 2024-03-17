@@ -61,7 +61,7 @@ set(MCPU "-mcpu=cortex-m4 -mthumb")
 set(MFLOAT_ABI "-mfloat-abi=hard")
 set(LINKER_SCRIPT ${STM32_LDS_PATH}/STM32F401CCUX_FLASH.ld)
 
-set(CMAKE_C_FLAGS "${MCPU} ${MFLOAT_ABI} -Os -std=gnu11 --specs=nano.specs")
+set(CMAKE_C_FLAGS "${MCPU} ${MFLOAT_ABI} -std=gnu11 --specs=nano.specs")
 set(CMAKE_ASM_FLAGS "${CMAKE_C_FLAGS} -x assembler-with-cpp")
 
 set(CMAKE_EXE_LINKER_FLAGS
